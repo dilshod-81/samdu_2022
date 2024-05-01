@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exchange Rates</title>
+</head>
+<body>
+    <h1>Exchange Rates</h1>
+    {% if exchange_rates %}
+        <ul>
+            {% for rate in exchange_rates %}
+                <li>{{ rate.title }}: {{ rate.cb_price }} - {{ rate.date }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Failed to fetch exchange rates</p>
+    {% endif %}
+</body>
+</html>
+
+

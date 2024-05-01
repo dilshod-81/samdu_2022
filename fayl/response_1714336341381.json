@@ -1,0 +1,1715 @@
+{
+  "success": true,
+  "error": null,
+  "data": {
+    "items": [
+      {
+        "id": 922247,
+        "subject": {
+          "id": 814,
+          "name": "Ambulator-poliklinik pediatriya",
+          "code": "103-094"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 16,
+          "name": "1-son Pediatriya  va neonotologiya kafedrasi",
+          "code": "363-102-04",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 4,
+          "active": true
+        },
+        "auditorium": {
+          "code": 57,
+          "name": "2-son Pediatriya kafedrasi ",
+          "auditoriumType": {
+            "code": "11",
+            "name": "Ma’ruza"
+          },
+          "building": {
+            "id": 2,
+            "name": "Viloyat bolalar ko’p tarmoqli tibbiyot markazi"
+          }
+        },
+        "trainingType": {
+          "code": "11",
+          "name": "Ma’ruza"
+        },
+        "lessonPair": {
+          "code": "13",
+          "name": "3",
+          "start_time": "11:10",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 142,
+          "name": "IBRAGIMOVA M. F."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714608000,
+        "_week": 16060
+      },
+      {
+        "id": 922231,
+        "subject": {
+          "id": 814,
+          "name": "Ambulator-poliklinik pediatriya",
+          "code": "103-094"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 16,
+          "name": "1-son Pediatriya  va neonotologiya kafedrasi",
+          "code": "363-102-04",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 4,
+          "active": true
+        },
+        "auditorium": {
+          "code": 816,
+          "name": "1-son Pediatriya kafedrasi Neonatologiya 7-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 2,
+            "name": "Viloyat bolalar ko’p tarmoqli tibbiyot markazi"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 156,
+          "name": "AXMEDOVA D. Y."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714694400,
+        "_week": 16060
+      },
+      {
+        "id": 922227,
+        "subject": {
+          "id": 814,
+          "name": "Ambulator-poliklinik pediatriya",
+          "code": "103-094"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 16,
+          "name": "1-son Pediatriya  va neonotologiya kafedrasi",
+          "code": "363-102-04",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 4,
+          "active": true
+        },
+        "auditorium": {
+          "code": 816,
+          "name": "1-son Pediatriya kafedrasi Neonatologiya 7-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 2,
+            "name": "Viloyat bolalar ko’p tarmoqli tibbiyot markazi"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 156,
+          "name": "AXMEDOVA D. Y."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714608000,
+        "_week": 16060
+      },
+      {
+        "id": 922223,
+        "subject": {
+          "id": 814,
+          "name": "Ambulator-poliklinik pediatriya",
+          "code": "103-094"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 16,
+          "name": "1-son Pediatriya  va neonotologiya kafedrasi",
+          "code": "363-102-04",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 4,
+          "active": true
+        },
+        "auditorium": {
+          "code": 816,
+          "name": "1-son Pediatriya kafedrasi Neonatologiya 7-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 2,
+            "name": "Viloyat bolalar ko’p tarmoqli tibbiyot markazi"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 156,
+          "name": "AXMEDOVA D. Y."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714521600,
+        "_week": 16060
+      },
+      {
+        "id": 922219,
+        "subject": {
+          "id": 814,
+          "name": "Ambulator-poliklinik pediatriya",
+          "code": "103-094"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 16,
+          "name": "1-son Pediatriya  va neonotologiya kafedrasi",
+          "code": "363-102-04",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 4,
+          "active": true
+        },
+        "auditorium": {
+          "code": 816,
+          "name": "1-son Pediatriya kafedrasi Neonatologiya 7-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 2,
+            "name": "Viloyat bolalar ko’p tarmoqli tibbiyot markazi"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 156,
+          "name": "AXMEDOVA D. Y."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714435200,
+        "_week": 16060
+      },
+      {
+        "id": 922215,
+        "subject": {
+          "id": 814,
+          "name": "Ambulator-poliklinik pediatriya",
+          "code": "103-094"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 16,
+          "name": "1-son Pediatriya  va neonotologiya kafedrasi",
+          "code": "363-102-04",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 4,
+          "active": true
+        },
+        "auditorium": {
+          "code": 816,
+          "name": "1-son Pediatriya kafedrasi Neonatologiya 7-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 2,
+            "name": "Viloyat bolalar ko’p tarmoqli tibbiyot markazi"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 156,
+          "name": "AXMEDOVA D. Y."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714348800,
+        "_week": 16060
+      },
+      {
+        "id": 922190,
+        "subject": {
+          "id": 814,
+          "name": "Ambulator-poliklinik pediatriya",
+          "code": "103-094"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 16,
+          "name": "1-son Pediatriya  va neonotologiya kafedrasi",
+          "code": "363-102-04",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 4,
+          "active": true
+        },
+        "auditorium": {
+          "code": 816,
+          "name": "1-son Pediatriya kafedrasi Neonatologiya 7-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 2,
+            "name": "Viloyat bolalar ko’p tarmoqli tibbiyot markazi"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 156,
+          "name": "AXMEDOVA D. Y."
+        },
+        "weekStartTime": 1713744000,
+        "weekEndTime": 1714176000,
+        "lesson_date": 1714089600,
+        "_week": 16059
+      },
+      {
+        "id": 921885,
+        "subject": {
+          "id": 814,
+          "name": "Ambulator-poliklinik pediatriya",
+          "code": "103-094"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 16,
+          "name": "1-son Pediatriya  va neonotologiya kafedrasi",
+          "code": "363-102-04",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 4,
+          "active": true
+        },
+        "auditorium": {
+          "code": 661,
+          "name": "1-son Pediatriya kafedrasi Neonatologiya ",
+          "auditoriumType": {
+            "code": "11",
+            "name": "Ma’ruza"
+          },
+          "building": {
+            "id": 2,
+            "name": "Viloyat bolalar ko’p tarmoqli tibbiyot markazi"
+          }
+        },
+        "trainingType": {
+          "code": "11",
+          "name": "Ma’ruza"
+        },
+        "lessonPair": {
+          "code": "13",
+          "name": "3",
+          "start_time": "11:10",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 142,
+          "name": "IBRAGIMOVA M. F."
+        },
+        "weekStartTime": 1713744000,
+        "weekEndTime": 1714176000,
+        "lesson_date": 1714089600,
+        "_week": 16059
+      },
+      {
+        "id": 921881,
+        "subject": {
+          "id": 814,
+          "name": "Ambulator-poliklinik pediatriya",
+          "code": "103-094"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 16,
+          "name": "1-son Pediatriya  va neonotologiya kafedrasi",
+          "code": "363-102-04",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 4,
+          "active": true
+        },
+        "auditorium": {
+          "code": 816,
+          "name": "1-son Pediatriya kafedrasi Neonatologiya 7-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 2,
+            "name": "Viloyat bolalar ko’p tarmoqli tibbiyot markazi"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 156,
+          "name": "AXMEDOVA D. Y."
+        },
+        "weekStartTime": 1713744000,
+        "weekEndTime": 1714176000,
+        "lesson_date": 1714003200,
+        "_week": 16059
+      },
+      {
+        "id": 863908,
+        "subject": {
+          "id": 36,
+          "name": "Akusherlik va ginekologiya",
+          "code": "103-12"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 41,
+          "name": "1-son Akusherlik va ginekologiya ",
+          "code": "363-112-11",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 115,
+          "active": true
+        },
+        "auditorium": {
+          "code": 165,
+          "name": "3-son Akusherlik va ginekologiya kafedrasi 2-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 8,
+            "name": "Shahar tu’g’riq markazi №1"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 726,
+          "name": "SHAVAZI N. N."
+        },
+        "weekStartTime": 1713744000,
+        "weekEndTime": 1714176000,
+        "lesson_date": 1713744000,
+        "_week": 16059
+      },
+      {
+        "id": 863904,
+        "subject": {
+          "id": 36,
+          "name": "Akusherlik va ginekologiya",
+          "code": "103-12"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 41,
+          "name": "1-son Akusherlik va ginekologiya ",
+          "code": "363-112-11",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 115,
+          "active": true
+        },
+        "auditorium": {
+          "code": 165,
+          "name": "3-son Akusherlik va ginekologiya kafedrasi 2-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 8,
+            "name": "Shahar tu’g’riq markazi №1"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 726,
+          "name": "SHAVAZI N. N."
+        },
+        "weekStartTime": 1713139200,
+        "weekEndTime": 1713571200,
+        "lesson_date": 1713484800,
+        "_week": 15894
+      },
+      {
+        "id": 863900,
+        "subject": {
+          "id": 36,
+          "name": "Akusherlik va ginekologiya",
+          "code": "103-12"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 41,
+          "name": "1-son Akusherlik va ginekologiya ",
+          "code": "363-112-11",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 115,
+          "active": true
+        },
+        "auditorium": {
+          "code": 165,
+          "name": "3-son Akusherlik va ginekologiya kafedrasi 2-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 8,
+            "name": "Shahar tu’g’riq markazi №1"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 726,
+          "name": "SHAVAZI N. N."
+        },
+        "weekStartTime": 1713139200,
+        "weekEndTime": 1713571200,
+        "lesson_date": 1713398400,
+        "_week": 15894
+      },
+      {
+        "id": 863896,
+        "subject": {
+          "id": 36,
+          "name": "Akusherlik va ginekologiya",
+          "code": "103-12"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 41,
+          "name": "1-son Akusherlik va ginekologiya ",
+          "code": "363-112-11",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 115,
+          "active": true
+        },
+        "auditorium": {
+          "code": 165,
+          "name": "3-son Akusherlik va ginekologiya kafedrasi 2-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 8,
+            "name": "Shahar tu’g’riq markazi №1"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 726,
+          "name": "SHAVAZI N. N."
+        },
+        "weekStartTime": 1713139200,
+        "weekEndTime": 1713571200,
+        "lesson_date": 1713312000,
+        "_week": 15894
+      },
+      {
+        "id": 863892,
+        "subject": {
+          "id": 36,
+          "name": "Akusherlik va ginekologiya",
+          "code": "103-12"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 41,
+          "name": "1-son Akusherlik va ginekologiya ",
+          "code": "363-112-11",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 115,
+          "active": true
+        },
+        "auditorium": {
+          "code": 165,
+          "name": "3-son Akusherlik va ginekologiya kafedrasi 2-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 8,
+            "name": "Shahar tu’g’riq markazi №1"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 726,
+          "name": "SHAVAZI N. N."
+        },
+        "weekStartTime": 1713139200,
+        "weekEndTime": 1713571200,
+        "lesson_date": 1713225600,
+        "_week": 15894
+      },
+      {
+        "id": 863888,
+        "subject": {
+          "id": 36,
+          "name": "Akusherlik va ginekologiya",
+          "code": "103-12"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 41,
+          "name": "1-son Akusherlik va ginekologiya ",
+          "code": "363-112-11",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 115,
+          "active": true
+        },
+        "auditorium": {
+          "code": 165,
+          "name": "3-son Akusherlik va ginekologiya kafedrasi 2-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 8,
+            "name": "Shahar tu’g’riq markazi №1"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 726,
+          "name": "SHAVAZI N. N."
+        },
+        "weekStartTime": 1713139200,
+        "weekEndTime": 1713571200,
+        "lesson_date": 1713139200,
+        "_week": 15894
+      },
+      {
+        "id": 863884,
+        "subject": {
+          "id": 36,
+          "name": "Akusherlik va ginekologiya",
+          "code": "103-12"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 41,
+          "name": "1-son Akusherlik va ginekologiya ",
+          "code": "363-112-11",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 115,
+          "active": true
+        },
+        "auditorium": {
+          "code": 165,
+          "name": "3-son Akusherlik va ginekologiya kafedrasi 2-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 8,
+            "name": "Shahar tu’g’riq markazi №1"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 726,
+          "name": "SHAVAZI N. N."
+        },
+        "weekStartTime": 1712534400,
+        "weekEndTime": 1712966400,
+        "lesson_date": 1712966400,
+        "_week": 15893
+      },
+      {
+        "id": 863880,
+        "subject": {
+          "id": 36,
+          "name": "Akusherlik va ginekologiya",
+          "code": "103-12"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 41,
+          "name": "1-son Akusherlik va ginekologiya ",
+          "code": "363-112-11",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 115,
+          "active": true
+        },
+        "auditorium": {
+          "code": 165,
+          "name": "3-son Akusherlik va ginekologiya kafedrasi 2-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 8,
+            "name": "Shahar tu’g’riq markazi №1"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 726,
+          "name": "SHAVAZI N. N."
+        },
+        "weekStartTime": 1713744000,
+        "weekEndTime": 1714176000,
+        "lesson_date": 1713830400,
+        "_week": 16059
+      },
+      {
+        "id": 863876,
+        "subject": {
+          "id": 36,
+          "name": "Akusherlik va ginekologiya",
+          "code": "103-12"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 41,
+          "name": "1-son Akusherlik va ginekologiya ",
+          "code": "363-112-11",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 115,
+          "active": true
+        },
+        "auditorium": {
+          "code": 165,
+          "name": "3-son Akusherlik va ginekologiya kafedrasi 2-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 8,
+            "name": "Shahar tu’g’riq markazi №1"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 726,
+          "name": "SHAVAZI N. N."
+        },
+        "weekStartTime": 1713744000,
+        "weekEndTime": 1714176000,
+        "lesson_date": 1713916800,
+        "_week": 16059
+      },
+      {
+        "id": 863872,
+        "subject": {
+          "id": 36,
+          "name": "Akusherlik va ginekologiya",
+          "code": "103-12"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 41,
+          "name": "1-son Akusherlik va ginekologiya ",
+          "code": "363-112-11",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 115,
+          "active": true
+        },
+        "auditorium": {
+          "code": 165,
+          "name": "3-son Akusherlik va ginekologiya kafedrasi 2-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 8,
+            "name": "Shahar tu’g’riq markazi №1"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 726,
+          "name": "SHAVAZI N. N."
+        },
+        "weekStartTime": 1712534400,
+        "weekEndTime": 1712966400,
+        "lesson_date": 1712620800,
+        "_week": 15893
+      },
+      {
+        "id": 863868,
+        "subject": {
+          "id": 36,
+          "name": "Akusherlik va ginekologiya",
+          "code": "103-12"
+        },
+        "semester": {
+          "code": "22",
+          "name": "12-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 813,
+          "name": "mp2018-02",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 5,
+          "name": "Tibbiy pedagogika",
+          "code": "363-103",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 41,
+          "name": "1-son Akusherlik va ginekologiya ",
+          "code": "363-112-11",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 115,
+          "active": true
+        },
+        "auditorium": {
+          "code": 165,
+          "name": "3-son Akusherlik va ginekologiya kafedrasi 2-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 8,
+            "name": "Shahar tu’g’riq markazi №1"
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 726,
+          "name": "SHAVAZI N. N."
+        },
+        "weekStartTime": 1712534400,
+        "weekEndTime": 1712966400,
+        "lesson_date": 1712534400,
+        "_week": 15893
+      }
+    ],
+    "pagination": {
+      "totalCount": 199,
+      "pageSize": 20,
+      "pageCount": 10,
+      "page": 1
+    }
+  },
+  "code": 200
+}

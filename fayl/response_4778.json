@@ -1,0 +1,1715 @@
+{
+  "success": true,
+  "error": null,
+  "data": {
+    "items": [
+      {
+        "id": 925652,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1901,
+          "name": "2lf2020-31",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 207,
+          "name": "Ftiziatriya kafedrasi 9-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 678,
+          "name": "TURDIBEKOV X. I."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714694400,
+        "_week": 31865
+      },
+      {
+        "id": 925651,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1901,
+          "name": "2lf2020-31",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 207,
+          "name": "Ftiziatriya kafedrasi 9-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 678,
+          "name": "TURDIBEKOV X. I."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714608000,
+        "_week": 31865
+      },
+      {
+        "id": 925650,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1901,
+          "name": "2lf2020-31",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 207,
+          "name": "Ftiziatriya kafedrasi 9-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 678,
+          "name": "TURDIBEKOV X. I."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714521600,
+        "_week": 31865
+      },
+      {
+        "id": 925649,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1901,
+          "name": "2lf2020-31",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 207,
+          "name": "Ftiziatriya kafedrasi 9-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 678,
+          "name": "TURDIBEKOV X. I."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714435200,
+        "_week": 31865
+      },
+      {
+        "id": 925648,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1901,
+          "name": "2lf2020-31",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 207,
+          "name": "Ftiziatriya kafedrasi 9-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 678,
+          "name": "TURDIBEKOV X. I."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714348800,
+        "_week": 31865
+      },
+      {
+        "id": 925647,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1900,
+          "name": "2lf2020-30",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 206,
+          "name": "Ftiziatriya kafedrasi 8-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 1192,
+          "name": "OMONOV A. A."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714694400,
+        "_week": 31865
+      },
+      {
+        "id": 925646,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1900,
+          "name": "2lf2020-30",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 206,
+          "name": "Ftiziatriya kafedrasi 8-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 1192,
+          "name": "OMONOV A. A."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714608000,
+        "_week": 31865
+      },
+      {
+        "id": 925645,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1900,
+          "name": "2lf2020-30",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 206,
+          "name": "Ftiziatriya kafedrasi 8-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 1192,
+          "name": "OMONOV A. A."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714521600,
+        "_week": 31865
+      },
+      {
+        "id": 925644,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1900,
+          "name": "2lf2020-30",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 206,
+          "name": "Ftiziatriya kafedrasi 8-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 1192,
+          "name": "OMONOV A. A."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714435200,
+        "_week": 31865
+      },
+      {
+        "id": 925643,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1900,
+          "name": "2lf2020-30",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 206,
+          "name": "Ftiziatriya kafedrasi 8-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 1192,
+          "name": "OMONOV A. A."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714348800,
+        "_week": 31865
+      },
+      {
+        "id": 925642,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1899,
+          "name": "2lf2020-29",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 205,
+          "name": "Ftiziatriya kafedrasi 7-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 735,
+          "name": "KUYLIYEV K. U."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714694400,
+        "_week": 31865
+      },
+      {
+        "id": 925641,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1899,
+          "name": "2lf2020-29",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 205,
+          "name": "Ftiziatriya kafedrasi 7-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 735,
+          "name": "KUYLIYEV K. U."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714608000,
+        "_week": 31865
+      },
+      {
+        "id": 925640,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1899,
+          "name": "2lf2020-29",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 205,
+          "name": "Ftiziatriya kafedrasi 7-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 735,
+          "name": "KUYLIYEV K. U."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714521600,
+        "_week": 31865
+      },
+      {
+        "id": 925639,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1899,
+          "name": "2lf2020-29",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 205,
+          "name": "Ftiziatriya kafedrasi 7-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 735,
+          "name": "KUYLIYEV K. U."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714435200,
+        "_week": 31865
+      },
+      {
+        "id": 925638,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1899,
+          "name": "2lf2020-29",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 205,
+          "name": "Ftiziatriya kafedrasi 7-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 735,
+          "name": "KUYLIYEV K. U."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714348800,
+        "_week": 31865
+      },
+      {
+        "id": 925637,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1898,
+          "name": "2lf2020-28",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 204,
+          "name": "Ftiziatriya kafedrasi 6-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 26,
+          "name": "MAMATOVA N. T."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714694400,
+        "_week": 31865
+      },
+      {
+        "id": 925636,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1898,
+          "name": "2lf2020-28",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 204,
+          "name": "Ftiziatriya kafedrasi 6-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 26,
+          "name": "MAMATOVA N. T."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714608000,
+        "_week": 31865
+      },
+      {
+        "id": 925635,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1898,
+          "name": "2lf2020-28",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 204,
+          "name": "Ftiziatriya kafedrasi 6-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 26,
+          "name": "MAMATOVA N. T."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714521600,
+        "_week": 31865
+      },
+      {
+        "id": 925634,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1898,
+          "name": "2lf2020-28",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 204,
+          "name": "Ftiziatriya kafedrasi 6-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 26,
+          "name": "MAMATOVA N. T."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714435200,
+        "_week": 31865
+      },
+      {
+        "id": 925633,
+        "subject": {
+          "id": 54,
+          "name": "Ftiziatriya",
+          "code": "103-30"
+        },
+        "semester": {
+          "code": "18",
+          "name": "8-semestr"
+        },
+        "educationYear": {
+          "code": "2023",
+          "name": "2023-2024",
+          "current": true
+        },
+        "group": {
+          "id": 1898,
+          "name": "2lf2020-28",
+          "educationLang": {
+            "code": "11",
+            "name": "O‘zbek"
+          }
+        },
+        "faculty": {
+          "id": 115,
+          "name": "2-son Davolash ishi",
+          "code": "363-112",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "department": {
+          "id": 12,
+          "name": "Ftiziatriya va pulmonologiya kafedrasi",
+          "code": "363-101-02",
+          "structureType": {
+            "code": "12",
+            "name": "Kafedra"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": 1,
+          "active": true
+        },
+        "auditorium": {
+          "code": 204,
+          "name": "Ftiziatriya kafedrasi 6-xona",
+          "auditoriumType": {
+            "code": "13",
+            "name": "Amaliyot"
+          },
+          "building": {
+            "id": 14,
+            "name": "Viloyat silga qarshi dispenser va viloyat sil shifoxonasi "
+          }
+        },
+        "trainingType": {
+          "code": "13",
+          "name": "Amaliy"
+        },
+        "lessonPair": {
+          "code": "18",
+          "name": "8",
+          "start_time": "08:00",
+          "end_time": "12:30"
+        },
+        "employee": {
+          "id": 26,
+          "name": "MAMATOVA N. T."
+        },
+        "weekStartTime": 1714348800,
+        "weekEndTime": 1714780800,
+        "lesson_date": 1714348800,
+        "_week": 31865
+      }
+    ],
+    "pagination": {
+      "totalCount": 255373,
+      "pageSize": 20,
+      "pageCount": 12769,
+      "page": 1
+    }
+  },
+  "code": 200
+}

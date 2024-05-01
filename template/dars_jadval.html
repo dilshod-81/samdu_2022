@@ -1,0 +1,295 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container main-container">
+        <div id="fb-root">
+        <div class="main-content">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div class="div-article editable-font" id = "div-article" data-font = "18">
+                        <article>
+                            <header class = "article-header">
+                                        <h1 class = "article-title editable-font " data-font = "30">Dars jadvali</h1>
+                            </header>
+                            <div class = "article-text" id = "article-text">
+                            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+                                <html encoding="utf-8">
+                                <html>
+<form action="/" method="POST">
+    {% csrf_token %}
+    <label for="fakul_id">Fakultetni tanlang:</label>
+    <select class="form-select" name="fakul_id" aria-label="Default select example">
+        <option selected>Mavjud fakultetlarni tanlang</option>
+        {% for x in jadval %}
+        <option value={{ x.faculty.id }}>Fakultet {{ x.faculty.name }} {{ x.faculty.id }}</option>
+        {% endfor %}
+        <option value="4">Gruppa 4</option>
+    </select>
+
+    <label for="name_id">Guruhni tanlang:</label>
+    <select class="form-select" name="name_id" aria-label="Default select example">
+        <option selected>Mavjud guruhlarni tanlang</option>
+        {% for x in group_li %}
+        <option value={{x.id}}>{{ x.name }} ({{ y.educationLang.name }}) </option>
+        {% endfor %}
+        <option value="70">Gruppa 70</option>
+    </select>
+
+    <label for="semester_code">Semester tanlang:</label>
+    <select class="form-select" name="semester_code" aria-label="Default select example">
+        <option selected>Mavjud guruhlarni tanlang</option>
+        {% for x in jadval %}
+        <option value={{x.semester.code}}>Semester {{ x.semester.name }} {{x.semester.code}}</option>
+        {% endfor %}
+        <option value="18">Gruppa 18</option>
+    </select>
+
+    <button type="submit" class="btn btn-primary" >Tasdiqlash</button>
+</form>
+
+
+<!--<form action="/" method="POST" enctype="multipart/form-data">-->
+<!--    {% csrf_token %}-->
+<!--    <p><label for="name_id">Enter Group ID:</label></p>-->
+<!--    <p><input type="text" id="name_id" name="name_id"> </p>-->
+<!--    <p><label for="fakul_id">Fakultet Group ID:</label> </p>-->
+<!--    <p><input type="text" id="fakul_id" name="fakul_id"> </p>-->
+<!--    <p><button type="submit">Junatish</button></p>-->
+<!--</form>-->
+<!--{% if name_id %}-->
+<!--    <p>Group ID: {{ name_id }}</p>-->
+<!--{% endif %}-->
+<p>{{faculty }}</p>
+{% for y in group_li %}
+{{ y.id }}
+
+    {% if y.id == name_id %}
+
+        <p style="color: red; text-align: center;">
+            <strong>Guruh: {{ y.name }} ({{ y.educationLang.name }})</strong>
+        </p>
+
+
+{% for x in jadval %}
+{% if x.group.id == y.id and x.lesson_date == 'Dushanba' %}
+        {% if not first_lesson_date_shown %}
+            <p style="color: #3d65fb; text-align: center;" rel="text-align: center;"><strong>{{ x.lesson_date }}</strong> ({{ x.lesson_date_formatted }})</p>
+        {% endif %}
+        <table>
+            <thead>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th>#</th>
+                    <th scope="col">Kirish</th>
+                    <th scope="col">Chiqish</th>
+                    <th scope="col">Fan nomi</th>
+                    <th scope="col">Xona</th>
+                    <th scope="col">Fan turi</th>
+                    <th scope="col">O'qituvchi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th scope="row"><i class="fa fa-hand-o-right" aria-hidden="true"></i></th>
+                    <td>{{ x.lessonPair.start_time }}</td>
+                    <td>{{ x.lessonPair.end_time }}</td>
+                    <td>{{ x.subject.name }}</td>
+                    <td>{{ x.auditorium.name }}</td>
+                    <td>{{ x.trainingType.name }}</td>
+                    <td>{{ x.employee.name }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% endif %}
+{% endfor %}
+
+{% for x in jadval %}
+    {% if x.group.id == y.id and x.lesson_date == 'Seshanba' %}
+        {% if not first_lesson_date_shown %}
+            <p style="color: #3d65fb; text-align: center;" rel="text-align: center;"><strong>{{ x.lesson_date }}</strong> ({{ x.lesson_date_formatted }})</p>
+        {% endif %}
+        <table>
+            <thead>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th>#</th>
+                    <th scope="col">Kirish</th>
+                    <th scope="col">Chiqish</th>
+                    <th scope="col">Fan nomi</th>
+                    <th scope="col">Xona</th>
+                    <th scope="col">Fan turi</th>
+                    <th scope="col">O'qituvchi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th scope="row"><i class="fa fa-hand-o-right" aria-hidden="true"></i></th>
+                    <td>{{ x.lessonPair.start_time }}</td>
+                    <td>{{ x.lessonPair.end_time }}</td>
+                    <td>{{ x.subject.name }}</td>
+                    <td>{{ x.auditorium.name }}</td>
+                    <td>{{ x.trainingType.name }}</td>
+                    <td>{{ x.employee.name }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% endif %}
+{% endfor %}
+
+{% for x in jadval %}
+    {% if x.group.id == y.id and x.lesson_date == 'Chorshanba' %}
+        {% if not first_lesson_date_shown %}
+            <p style="color: #3d65fb; text-align: center;" rel="text-align: center;"><strong>{{ x.lesson_date }}</strong> ({{ x.lesson_date_formatted }})</p>
+        {% endif %}
+        <table>
+            <thead>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th>#</th>
+                    <th scope="col">Kirish</th>
+                    <th scope="col">Chiqish</th>
+                    <th scope="col">Fan nomi</th>
+                    <th scope="col">Xona</th>
+                    <th scope="col">Fan turi</th>
+                    <th scope="col">O'qituvchi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th scope="row"><i class="fa fa-hand-o-right" aria-hidden="true"></i></th>
+                    <td>{{ x.lessonPair.start_time }}</td>
+                    <td>{{ x.lessonPair.end_time }}</td>
+                    <td>{{ x.subject.name }}</td>
+                    <td>{{ x.auditorium.name }}</td>
+                    <td>{{ x.trainingType.name }}</td>
+                    <td>{{ x.employee.name }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% endif %}
+{% endfor %}
+
+{% for x in jadval %}
+    {% if x.group.id == y.id and x.lesson_date == 'Payshanba' %}
+        {% if not first_lesson_date_shown %}
+            <p style="color: #3d65fb; text-align: center;" rel="text-align: center;"><strong>{{ x.lesson_date }}</strong> ({{ x.lesson_date_formatted }})</p>
+        {% endif %}
+        <table>
+            <thead>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th>#</th>
+                    <th scope="col">Kirish</th>
+                    <th scope="col">Chiqish</th>
+                    <th scope="col">Fan nomi</th>
+                    <th scope="col">Xona</th>
+                    <th scope="col">Fan turi</th>
+                    <th scope="col">O'qituvchi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th scope="row"><i class="fa fa-hand-o-right" aria-hidden="true"></i></th>
+                    <td>{{ x.lessonPair.start_time }}</td>
+                    <td>{{ x.lessonPair.end_time }}</td>
+                    <td>{{ x.subject.name }}</td>
+                    <td>{{ x.auditorium.name }}</td>
+                    <td>{{ x.trainingType.name }}</td>
+                    <td>{{ x.employee.name }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% endif %}
+{% endfor %}
+
+{% for x in jadval %}
+    {% if x.group.id == y.id and x.lesson_date == 'Juma' %}
+        {% if not first_lesson_date_shown %}
+            <p style="color: #3d65fb; text-align: center;" rel="text-align: center;"><strong>{{ x.lesson_date }}</strong> ({{ x.lesson_date_formatted }})</p>
+        {% endif %}
+        <table>
+            <thead>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th>#</th>
+                    <th scope="col">Kirish</th>
+                    <th scope="col">Chiqish</th>
+                    <th scope="col">Fan nomi</th>
+                    <th scope="col">Xona</th>
+                    <th scope="col">Fan turi</th>
+                    <th scope="col">O'qituvchi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th scope="row"><i class="fa fa-hand-o-right" aria-hidden="true"></i></th>
+                    <td>{{ x.lessonPair.start_time }}</td>
+                    <td>{{ x.lessonPair.end_time }}</td>
+                    <td>{{ x.subject.name }}</td>
+                    <td>{{ x.auditorium.name }}</td>
+                    <td>{{ x.trainingType.name }}</td>
+                    <td>{{ x.employee.name }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% endif %}
+{% endfor %}
+
+{% for x in jadval %}
+    {% if x.group.id == y.id and x.lesson_date == 'Shanba' %}
+        {% if not first_lesson_date_shown %}
+            <p style="color: #3d65fb; text-align: center;" rel="text-align: center;"><strong>{{ x.lesson_date }}</strong> ({{ x.lesson_date_formatted }})</p>
+        {% endif %}
+        <table>
+            <thead>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th>#</th>
+                    <th scope="col">Kirish</th>
+                    <th scope="col">Chiqish</th>
+                    <th scope="col">Fan nomi</th>
+                    <th scope="col">Xona</th>
+                    <th scope="col">Fan turi</th>
+                    <th scope="col">O'qituvchi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th scope="row"><i class="fa fa-hand-o-right" aria-hidden="true"></i></th>
+                    <td>{{ x.lessonPair.start_time }}</td>
+                    <td>{{ x.lessonPair.end_time }}</td>
+                    <td>{{ x.subject.name }}</td>
+                    <td>{{ x.auditorium.name }}</td>
+                    <td>{{ x.trainingType.name }}</td>
+                    <td>{{ x.employee.name }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% endif %}
+{% endfor %}
+
+
+{% endif %}
+{% endfor %}
+</body>
+</html>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="div-article-sidebar" id = "article-sidebar">
+                    <div class = "inner-sidebar">
+                    <h4 class="article-sidebar-title">Fakultetlar</h4>
+                            {% for y in faculty %}
+                            <a href = "/uz/pages/instruction" class = "article-sidebar-item main-sidebar-item "><i class="fas fa-angle-double-right"></i> {{ y }}</a>
+                            {% endfor %}
+                    </div>
+                    <div class = "inner-sidebar">
+                            <h4 class="article-sidebar-title">Kafedralar</h4>
+                        {% for kafedra in kafedra_list %}
+                            <a class="article-sidebar-news-item " href="/uz/news/2566211"><span class="article-sidebar-news-item-date"><i class="fa fa-university" aria-hidden="true"></i> </span><br>{{ kafedra }}</a>
+                        {% endfor %}
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+
+{% endblock content %}

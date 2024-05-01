@@ -1,0 +1,315 @@
+{
+  "success": true,
+  "error": null,
+  "data": {
+    "items": [
+      {
+        "id": 239,
+        "name": "DKTF Travmatologiya-ortopediya, Nevrologiya va Oftalmologiya ",
+        "code": "363-111-25",
+        "structureType": {
+          "code": "12",
+          "name": "Kafedra"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": 104,
+        "active": true
+      },
+      {
+        "id": 238,
+        "name": "DKTF Nevrologiya",
+        "code": "363-111-24",
+        "structureType": {
+          "code": "12",
+          "name": "Kafedra"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": 104,
+        "active": true
+      },
+      {
+        "id": 237,
+        "name": "Epidemiologiya kafedrasi",
+        "code": "363-291",
+        "structureType": {
+          "code": "10",
+          "name": "Boshqa"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 236,
+        "name": "Bolalar kasalliklari propedevtikasi",
+        "code": "363-251",
+        "structureType": {
+          "code": "10",
+          "name": "Boshqa"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 235,
+        "name": "1-son Ichki kasalliklar va fiziatriya",
+        "code": "363-239",
+        "structureType": {
+          "code": "13",
+          "name": "Bo‘lim"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 234,
+        "name": "Maxdumi A'zam ko'chasi 18-uy binosi",
+        "code": "363-233",
+        "structureType": {
+          "code": "13",
+          "name": "Bo‘lim"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 233,
+        "name": "Tibbiy kimyo",
+        "code": "363-232",
+        "structureType": {
+          "code": "13",
+          "name": "Bo‘lim"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 232,
+        "name": "1-son Xirurgik kasalliklar, transplantologiya va urologiya ",
+        "code": "363-224",
+        "structureType": {
+          "code": "13",
+          "name": "Bo‘lim"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 231,
+        "name": "1-son Xirurgik kasalliklar, transplantologiya va urologiya ",
+        "code": "363-112-22",
+        "structureType": {
+          "code": "12",
+          "name": "Kafedra"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": 115,
+        "active": true
+      },
+      {
+        "id": 230,
+        "name": "Jimoniy tarbiya va sport",
+        "code": "363-225",
+        "structureType": {
+          "code": "13",
+          "name": "Bo‘lim"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 226,
+        "name": "Qo'shma ta'lim fakulteti",
+        "code": "363-115",
+        "structureType": {
+          "code": "11",
+          "name": "Fakultet"
+        },
+        "localityType": {
+          "code": "10",
+          "name": "Boshqa"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 225,
+        "name": "Qo'shma ta'lim fakulteti",
+        "code": "363-101-11",
+        "structureType": {
+          "code": "12",
+          "name": "Kafedra"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": 1,
+        "active": true
+      },
+      {
+        "id": 221,
+        "name": "Dekan o'rinbosari",
+        "code": "363-220",
+        "structureType": {
+          "code": "10",
+          "name": "Boshqa"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 220,
+        "name": "4-son Talabalar turar",
+        "code": "363-216",
+        "structureType": {
+          "code": "10",
+          "name": "Boshqa"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 219,
+        "name": "2-son Bolalar xirurgiyasi kafedrasi",
+        "code": "363-219",
+        "structureType": {
+          "code": "10",
+          "name": "Boshqa"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 218,
+        "name": "3-son Pediatriya va tibbiy genetika kafedrasi",
+        "code": "363-240",
+        "structureType": {
+          "code": "10",
+          "name": "Boshqa"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 217,
+        "name": "Farmakognoziya va farmasevtik  texnologiya kafedrasi",
+        "code": "363-299",
+        "structureType": {
+          "code": "10",
+          "name": "Boshqa"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 216,
+        "name": "2-son Akusherlik va ginekologiya kafedrasi",
+        "code": "363-298",
+        "structureType": {
+          "code": "10",
+          "name": "Boshqa"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 215,
+        "name": "Teri-tanosil kasalliklari kafedrasi",
+        "code": "363-297",
+        "structureType": {
+          "code": "10",
+          "name": "Boshqa"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      },
+      {
+        "id": 214,
+        "name": "DKTF Xirurgiya, endoskopiya va anesteziologiya-reanimatologiya",
+        "code": "363-296",
+        "structureType": {
+          "code": "10",
+          "name": "Boshqa"
+        },
+        "localityType": {
+          "code": "11",
+          "name": "Mahalliy"
+        },
+        "parent": null,
+        "active": true
+      }
+    ],
+    "pagination": {
+      "totalCount": 210,
+      "pageSize": 20,
+      "pageCount": 11,
+      "page": 1
+    }
+  },
+  "code": 200
+}

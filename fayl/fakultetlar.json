@@ -1,0 +1,595 @@
+{
+  "success": true,
+  "error": null,
+  "data": {
+    "items": [
+      {
+        "id": 2831,
+        "name": "3m18",
+        "department": {
+          "id": 10,
+          "name": "Xalqaro ta'lim fakulteti",
+          "code": "363-108",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 53,
+          "code": "60910200",
+          "name": "Davolash ishi"
+        },
+        "educationLang": {
+          "code": "14",
+          "name": "Ingliz"
+        },
+        "_curriculum": 999
+      },
+      {
+        "id": 2830,
+        "name": "3m17",
+        "department": {
+          "id": 10,
+          "name": "Xalqaro ta'lim fakulteti",
+          "code": "363-108",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 53,
+          "code": "60910200",
+          "name": "Davolash ishi"
+        },
+        "educationLang": {
+          "code": "14",
+          "name": "Ingliz"
+        },
+        "_curriculum": 999
+      },
+      {
+        "id": 2829,
+        "name": "2021-bolalar nevrologiyasi",
+        "department": {
+          "id": 52,
+          "name": "Magistratura bo'limi",
+          "code": "363-109",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 44,
+          "code": "5A510205",
+          "name": "Bolalar nevrologiyasi"
+        },
+        "educationLang": {
+          "code": "11",
+          "name": "O‘zbek"
+        },
+        "_curriculum": 1062
+      },
+      {
+        "id": 2828,
+        "name": "Xirurgik stomatologiya(Ordinatura)",
+        "department": {
+          "id": 226,
+          "name": "Qo'shma ta'lim fakulteti",
+          "code": "363-115",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "10",
+            "name": "Boshqa"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 174,
+          "code": "80910709",
+          "name": "Xirurgik stomatologiya"
+        },
+        "educationLang": {
+          "code": "12",
+          "name": "Rus"
+        },
+        "_curriculum": 1060
+      },
+      {
+        "id": 2827,
+        "name": "Otorinolaringologiya",
+        "department": {
+          "id": 226,
+          "name": "Qo'shma ta'lim fakulteti",
+          "code": "363-115",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "10",
+            "name": "Boshqa"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 172,
+          "code": "80910204",
+          "name": "Otorinolaringologiya"
+        },
+        "educationLang": {
+          "code": "12",
+          "name": "Rus"
+        },
+        "_curriculum": 1059
+      },
+      {
+        "id": 2826,
+        "name": "Akusherlik va ginekologiya",
+        "department": {
+          "id": 226,
+          "name": "Qo'shma ta'lim fakulteti",
+          "code": "363-115",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "10",
+            "name": "Boshqa"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 173,
+          "code": "80910201",
+          "name": "Akusherlik va ginekologiya"
+        },
+        "educationLang": {
+          "code": "12",
+          "name": "Rus"
+        },
+        "_curriculum": 1058
+      },
+      {
+        "id": 2825,
+        "name": "Yuz-jag' xirurgiyasi",
+        "department": {
+          "id": 226,
+          "name": "Qo'shma ta'lim fakulteti",
+          "code": "363-115",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "10",
+            "name": "Boshqa"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 171,
+          "code": "80910710",
+          "name": "Yuz-jag' xirurgiyasi"
+        },
+        "educationLang": {
+          "code": "12",
+          "name": "Rus"
+        },
+        "_curriculum": 1057
+      },
+      {
+        "id": 2824,
+        "name": "Yurak-qon tomir xirurgiyasi ",
+        "department": {
+          "id": 226,
+          "name": "Qo'shma ta'lim fakulteti",
+          "code": "363-115",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "10",
+            "name": "Boshqa"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 170,
+          "code": "80910724",
+          "name": "Yurak-qon tomir xirurgiyasi"
+        },
+        "educationLang": {
+          "code": "12",
+          "name": "Rus"
+        },
+        "_curriculum": 1055
+      },
+      {
+        "id": 2822,
+        "name": "Kardiologiya(2023)",
+        "department": {
+          "id": 226,
+          "name": "Qo'shma ta'lim fakulteti",
+          "code": "363-115",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "10",
+            "name": "Boshqa"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 169,
+          "code": "80910205",
+          "name": "Kardiologiya"
+        },
+        "educationLang": {
+          "code": "12",
+          "name": "Rus"
+        },
+        "_curriculum": 1056
+      },
+      {
+        "id": 2821,
+        "name": "xt4t2020-01",
+        "department": {
+          "id": 10,
+          "name": "Xalqaro ta'lim fakulteti",
+          "code": "363-108",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 157,
+          "code": "5510100",
+          "name": "Davolash ishi"
+        },
+        "educationLang": {
+          "code": "14",
+          "name": "Ingliz"
+        },
+        "_curriculum": 1054
+      },
+      {
+        "id": 2820,
+        "name": "2023-Bolalar kardiorevmatologiyasi",
+        "department": {
+          "id": 54,
+          "name": "Klinik ordinatura",
+          "code": "363-110",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 168,
+          "code": "80910275",
+          "name": "Bolalar kardiorevmatologiyasi"
+        },
+        "educationLang": {
+          "code": "11",
+          "name": "O‘zbek"
+        },
+        "_curriculum": 1053
+      },
+      {
+        "id": 2819,
+        "name": "2020-Bolalar nevrologiyasi",
+        "department": {
+          "id": 54,
+          "name": "Klinik ordinatura",
+          "code": "363-110",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "11",
+            "name": "Mahalliy"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 121,
+          "code": "80910305",
+          "name": "Bolalar nevrologiyasi"
+        },
+        "educationLang": {
+          "code": "11",
+          "name": "O‘zbek"
+        },
+        "_curriculum": 1052
+      },
+      {
+        "id": 2817,
+        "name": "qtmj2021-01",
+        "department": {
+          "id": 226,
+          "name": "Qo'shma ta'lim fakulteti",
+          "code": "363-115",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "10",
+            "name": "Boshqa"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 162,
+          "code": "5230200",
+          "name": "Menejment: sog'liqni saqlash menjmenti"
+        },
+        "educationLang": {
+          "code": "12",
+          "name": "Rus"
+        },
+        "_curriculum": 1051
+      },
+      {
+        "id": 2816,
+        "name": "qtfr2021-01",
+        "department": {
+          "id": 226,
+          "name": "Qo'shma ta'lim fakulteti",
+          "code": "363-115",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "10",
+            "name": "Boshqa"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 161,
+          "code": "5510500",
+          "name": "Farmatsiya (Farmatsiya ishi)"
+        },
+        "educationLang": {
+          "code": "12",
+          "name": "Rus"
+        },
+        "_curriculum": 1038
+      },
+      {
+        "id": 2815,
+        "name": "qtst2021-02",
+        "department": {
+          "id": 226,
+          "name": "Qo'shma ta'lim fakulteti",
+          "code": "363-115",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "10",
+            "name": "Boshqa"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 165,
+          "code": "5510400",
+          "name": "Stomatologiya (yo‘nalishlar bo‘yicha)"
+        },
+        "educationLang": {
+          "code": "12",
+          "name": "Rus"
+        },
+        "_curriculum": 1041
+      },
+      {
+        "id": 2814,
+        "name": "qtst2021-01",
+        "department": {
+          "id": 226,
+          "name": "Qo'shma ta'lim fakulteti",
+          "code": "363-115",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "10",
+            "name": "Boshqa"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 165,
+          "code": "5510400",
+          "name": "Stomatologiya (yo‘nalishlar bo‘yicha)"
+        },
+        "educationLang": {
+          "code": "12",
+          "name": "Rus"
+        },
+        "_curriculum": 1041
+      },
+      {
+        "id": 2813,
+        "name": "qtmj2022-01",
+        "department": {
+          "id": 226,
+          "name": "Qo'shma ta'lim fakulteti",
+          "code": "363-115",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "10",
+            "name": "Boshqa"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 162,
+          "code": "5230200",
+          "name": "Menejment: sog'liqni saqlash menjmenti"
+        },
+        "educationLang": {
+          "code": "12",
+          "name": "Rus"
+        },
+        "_curriculum": 1048
+      },
+      {
+        "id": 2812,
+        "name": "qtmj2020-01",
+        "department": {
+          "id": 226,
+          "name": "Qo'shma ta'lim fakulteti",
+          "code": "363-115",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "10",
+            "name": "Boshqa"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 162,
+          "code": "5230200",
+          "name": "Menejment: sog'liqni saqlash menjmenti"
+        },
+        "educationLang": {
+          "code": "12",
+          "name": "Rus"
+        },
+        "_curriculum": 1045
+      },
+      {
+        "id": 2811,
+        "name": "qtpf2020-02",
+        "department": {
+          "id": 226,
+          "name": "Qo'shma ta'lim fakulteti",
+          "code": "363-115",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "10",
+            "name": "Boshqa"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 164,
+          "code": "5510200",
+          "name": "Pediatriya ishi"
+        },
+        "educationLang": {
+          "code": "12",
+          "name": "Rus"
+        },
+        "_curriculum": 1043
+      },
+      {
+        "id": 2810,
+        "name": "qtpf2020-01",
+        "department": {
+          "id": 226,
+          "name": "Qo'shma ta'lim fakulteti",
+          "code": "363-115",
+          "structureType": {
+            "code": "11",
+            "name": "Fakultet"
+          },
+          "localityType": {
+            "code": "10",
+            "name": "Boshqa"
+          },
+          "parent": null,
+          "active": true
+        },
+        "specialty": {
+          "id": 164,
+          "code": "5510200",
+          "name": "Pediatriya ishi"
+        },
+        "educationLang": {
+          "code": "12",
+          "name": "Rus"
+        },
+        "_curriculum": 1043
+      }
+    ],
+    "pagination": {
+      "totalCount": 1776,
+      "pageSize": 20,
+      "pageCount": 89,
+      "page": 1
+    }
+  },
+  "code": 200
+}
