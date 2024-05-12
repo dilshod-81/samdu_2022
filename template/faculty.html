@@ -17,51 +17,87 @@
                                 <html>
                                 <body>
                                     <p style="text-align: center;" rel="text-align: center;">
-                                        <strong>DAVOLASH FAKULTETI</strong>
+                                        <strong>1-SON DAVOLASH ISHI FAKULTETI</strong>
                                     </p>
-                                    {% for y in group_li %}
-                                    {% if y.id == 1390 %}
+
                                     <table>
                                         <tbody>
-                                        {% for x in jadval %}
-                                        {% if x.group.id == y.id and x.lesson_date == 'Chorshanba' %}
+
                                             <tr>
 
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong></strong><strong><a href="#">{{ x.subject.name }} - {{ x.group.name }} -{{ x.lessonPair.start_time }}  </a><br></strong>
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'davolash_1_kurs_1' %}">1-kurs </a><br></strong>
                                                     </p>
                                                 </td>
 
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec45e82c11a.pdf">2-kurs</a><br></strong>
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'davolash_1_kurs_2' %}">2-kurs</a><br></strong>
                                                     </p>
                                                 </td>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/6330a68482841.pdf">3-kurs</a><br></strong>
+                                                    <p style="text-align: center;"><strong><a href="{% url 'davolash_1_kurs_3' %}">3-kurs</a><br></strong>
                                                     </p>
                                                 </td>
                                             </tr>
-                                         {% endif %}
-                                        {% endfor %}
+
                                             <tr>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec46c23e763.pdf">4-kurs</a><br></strong>
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'davolash_1_kurs_4' %}">4-kurs</a><br></strong>
                                                     </p>
                                                 </td>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec46caf2935.pdf">5-kurs</a><br></strong>
+                                                    <p style="text-align: center;"><strong><a href="{% url 'davolash_1_kurs_5' %}">5-kurs</a><br></strong>
                                                     </p>
                                                 </td>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec46d1b1b84.pdf">6-kurs</a><br></strong>
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'davolash_1_kurs_6' %}">6-kurs</a><br></strong>
                                                     </p>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    {% endif %}
-                                    {% endfor %}
+
                             <hr>
+                                       <p style="text-align: center;" rel="text-align: center;">
+                                        <strong>2-SON DAVOLASH ISHI FAKULTETI</strong>
+                                    </p>
+                            <hr>
+                                    <table>
+                                        <tbody>
+
+                                            <tr>
+
+                                                <td style="text-align: center;">
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'davolash_2_kurs_1' %}">1-kurs </a><br></strong>
+                                                    </p>
+                                                </td>
+
+                                                <td style="text-align: center;">
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'davolash_2_kurs_2' %}">2-kurs </a><br></strong>
+                                                    </p>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <p style="text-align: center;"><strong><a href="{% url 'davolash_2_kurs_3' %}">3-kurs</a><br></strong>
+                                                    </p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'davolash_2_kurs_4' %}">4-kurs</a><br></strong>
+                                                    </p>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <p style="text-align: center;"><strong><a href="{% url 'davolash_2_kurs_5' %}">5-kurs</a><br></strong>
+                                                    </p>
+                                                </td>
+                                                <td style="text-align: center;">
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'davolash_2_kurs_6' %}">6-kurs</a><br></strong>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                     <p style="text-align: center;">
                                         <strong>PEDIATRIYA FAKULTETI</strong>
                                     </p>
@@ -69,28 +105,28 @@
                                         <tbody>
                                             <tr>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec4558c4c2d.pdf"><strong>1-kurs</strong></a><br></p>
+                                                    <p style="text-align: center;"><a href="{% url 'pediatriya_1_kurs' %}"><strong>1-kurs</strong></a><br></p>
                                                 </td>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec45e82c11a.pdf">2-kurs</a></strong>
+                                                    <p style="text-align: center;"><strong><a href="{% url 'pediatriya_2_kurs' %}">2-kurs</a></strong>
                                                     </p>
                                                 </td>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/6330a68482841.pdf">3-kurs</a><br></strong>
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'pediatriya_3_kurs' %}">3-kurs</a><br></strong>
                                                     </p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec46db2b665.pdf">4-kurs</a><br></strong>
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'pediatriya_4_kurs' %}">4-kurs</a><br></strong>
                                                     </p>
                                                 </td>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec46e87ef04.pdf">5-kurs</a><br></strong>
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'pediatriya_5_kurs' %}">5-kurs</a><br></strong>
                                                     </p>
                                                 </td>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec46f148eda.pdf">6-kurs</a><br></strong>
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'pediatriya_6_kurs'%}">6-kurs</a><br></strong>
                                                     </p>
                                                 </td>
                                             </tr>
@@ -104,28 +140,28 @@
                                         <tbody>
                                             <tr>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec4558c4c2d.pdf"><strong>1-kurs</strong></a><br></p>
+                                                    <p style="text-align: center;"><a href="{% url 'tibbiy_pedagok_1_kurs' %}"><strong>1-kurs</strong></a><br></p>
                                                 </td>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec45e82c11a.pdf">2-kurs</a></strong>
+                                                    <p style="text-align: center;"><strong><a href="{% url 'tibbiy_pedagok_2_kurs' %}">2-kurs</a></strong>
                                                     </p>
                                                 </td>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/6330a68482841.pdf">3-kurs</a><br></strong>
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'tibbiy_pedagok_3_kurs' %}">3-kurs</a><br></strong>
                                                     </p>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec46db2b665.pdf">4-kurs</a><br></strong>
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'tibbiy_pedagok_4_kurs' %}">4-kurs</a><br></strong>
                                                     </p>
                                                 </td>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec46e87ef04.pdf">5-kurs</a><br></strong>
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'tibbiy_pedagok_5_kurs' %}">5-kurs</a><br></strong>
                                                     </p>
                                                 </td>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec46f148eda.pdf">6-kurs</a><br></strong>
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'tibbiy_pedagok_6_kurs' %}">6-kurs</a><br></strong>
                                                     </p>
                                                 </td>
                                             </tr>
@@ -139,18 +175,18 @@
                                         <tbody>
                                             <tr>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec456871050.pdf"><strong>1-kurs</strong></a><br></p>
+                                                    <p style="text-align: center;"><a href="{% url 'stomatologiya_1_kurs' %}"><strong>1-kurs</strong></a><br></p>
                                                 </td>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec45e82c11a.pdf">2-kurs</a></strong></p>
+                                                    <p style="text-align: center;"><strong><a href="{% url 'stomatologiya_2_kurs' %}">2-kurs</a></strong></p>
                                                 </td>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/6330a68482841.pdf">3-kurs</a><br></strong></p>
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'stomatologiya_3_kurs' %}">3-kurs</a><br></strong></p>
                                                 </td>
                                                 <tr>
                                                 <td style="text-align: center;">
-                                                    <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec472257264.pdf">4-kurs</a><br></strong></p>
-                                                </td><td style="text-align: center;"><p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec4727e347b.pdf">5-kurs</a><br></strong>
+                                                    <p style="text-align: center;"><strong></strong><strong><a href="{% url 'stomatologiya_4_kurs' %}">4-kurs</a><br></strong></p>
+                                                </td><td style="text-align: center;"><p style="text-align: center;"><strong></strong><strong><a href="{% url 'stomatologiya_5_kurs' %}">5-kurs</a><br></strong>
                                                 </p></td><td style="text-align: center;"></td></tr></tbody></table>
                             <hr>
                                     <p style="text-align: center;">
@@ -158,31 +194,18 @@
                                     </p>
                                     <table>
                                                     <tbody>
+                                                      
                                                         <tr>
                                                             <td style="text-align: center;">
-                                                                <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec454ea7f67.pdf">1-kurs</a><br></strong>
+                                                                <p style="text-align: center;"><strong></strong><strong><a href="{% url 'oliy_hamshiralik_4_kurs' %}">4-kurs</a><br></strong>
                                                                 </p>
                                                             </td>
                                                             <td style="text-align: center;">
-                                                                <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec45e82c11a.pdf">2-kurs</a><br></strong>
+                                                                <p style="text-align: center;"><strong><a href="{% url 'oliy_hamshiralik_5_kurs' %}">5-kurs</a><br></strong>
                                                                 </p>
                                                             </td>
                                                             <td style="text-align: center;">
-                                                                <p style="text-align: center;"><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/6330a68482841.pdf">3-kurs</a><br></strong>
-                                                                </p>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="text-align: center;">
-                                                                <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec46c23e763.pdf">4-kurs</a><br></strong>
-                                                                </p>
-                                                            </td>
-                                                            <td style="text-align: center;">
-                                                                <p style="text-align: center;"><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec46caf2935.pdf">5-kurs</a><br></strong>
-                                                                </p>
-                                                            </td>
-                                                            <td style="text-align: center;">
-                                                                <p style="text-align: center;"><strong></strong><strong><a href="https://www.sammu.uz/frontend/web/upload/content-files/64ec46d1b1b84.pdf">6-kurs</a><br></strong>
+                                                                <p style="text-align: center;"><strong></strong><strong><a href="{% url 'oliy_hamshiralik_6_kurs' %}">6-kurs</a><br></strong>
                                                                 </p>
                                                             </td>
                                                         </tr>

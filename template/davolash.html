@@ -1,0 +1,103 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container main-container">
+        <div id="fb-root">
+        <div class="main-content">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div class="div-article editable-font" id = "div-article" data-font = "18">
+                        <article>
+                            <header class = "article-header">
+                                        <h1 class = "article-title editable-font " data-font = "30">Dars jadvali</h1>
+                            </header>
+                            <div class = "article-text" id = "article-text">
+
+<form action="/" method="POST">
+    {% csrf_token %}
+    <label for="fakul_id" style="color: #3d65fb; text-align: center;" rel="text-align: center;">Fakultetni tanlang:</label>
+<select class="form-select" name="fakul_id" aria-label="Default select example" onchange="showGroups(this)">
+    <option selected disabled>Tanlang...</option>
+
+    <option value='1'>1-son Davolash ishi</option>
+    <option value="115">2-son Davolash ishi</option>
+    {% for y in category_context %}
+    <option value="{{ y.id }}">{{y.name}}</option>
+    {% endfor %}
+</select>
+<br>
+<label for="name_id" style="color: #3d65fb; text-align: center;"  rel="text-align: center;">Guruhni tanlang:</label>
+<select class="form-select" name="name_id" id="group_select" aria-label="Default select example">
+    <option selected disabled></option>
+</select>
+
+<script>
+    function showGroups(select) {
+        var selectedFakul = select.value;
+        var groupSelect = document.getElementById("group_select");
+        groupSelect.innerHTML = ""; // Clear previous options
+
+        switch(selectedFakul) {
+            case '1':
+                groupSelect.add(new Option("Tanlang...", ""));
+                groupSelect.add(new Option("1lf2022-44", "2588"));
+                groupSelect.add(new Option("1lf2019-25", "1035"));
+                groupSelect.add(new Option("1lf2023-27", "2451"));
+                groupSelect.add(new Option("1lf2023-28", "2452"));
+                groupSelect.add(new Option("1lf2022-40", "2333"));
+                break;
+            case '115':
+                groupSelect.add(new Option("Tanlang...", ""));
+                groupSelect.add(new Option("2.1-guruh", "7"));
+                groupSelect.add(new Option("2lf2023-32", "2579"));
+                groupSelect.add(new Option("2.3-guruh", "9"));
+                break;
+            case '116':
+                groupSelect.add(new Option("Tanlang...", ""));
+                groupSelect.add(new Option("3.1-guruh", "10"));
+                groupSelect.add(new Option("3.2-guruh", "11"));
+                groupSelect.add(new Option("3.3-guruh", "12"));
+                break;
+            default:
+                groupSelect.innerHTML = "<option selected disabled>Tanlang...</option>"; // Show default option if no fakul is selected
+                break;
+
+        }
+    }
+</script>
+
+    <br>
+
+    <label for="birthday">Sana:</label>
+  <input type="date" placeholder="dd/mm/yyyy" id="birthday" name="birthday"><br><br>
+    <p><button type="submit" class="btn btn-primary">Tasdiqlash</button></p>
+
+</form
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="div-article-sidebar" id = "article-sidebar">
+                    <div class = "inner-sidebar">
+                    <h4 class="article-sidebar-title">Fakultetlar</h4>
+                            {% for y in category_context %}
+                            <a href = "/uz/pages/instruction" class = "article-sidebar-item main-sidebar-item "><i class="fas fa-angle-double-right"></i> {{ y.name }}</a>
+                            {% endfor %}
+                    </div>
+                    <div class = "inner-sidebar">
+                            <h4 class="article-sidebar-title">Kafedralar</h4>
+                        {% for kafedra in kafedra_list %}
+                            <a class="article-sidebar-news-item " href="/uz/news/2566211"><span class="article-sidebar-news-item-date"><i class="fa fa-university" aria-hidden="true"></i> </span><br>{{ kafedra }}</a>
+                        {% endfor %}
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        {% for x in category_context %}
+        <li>{{ x.name }} - id: ({{ x.id }})</li>
+        {% endfor %}
+{% endblock content %}

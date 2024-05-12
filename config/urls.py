@@ -24,7 +24,7 @@ from django.conf.urls.static import static #yangi
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("summu.urls")),
-    path('jadval/', include("jadval.urls")),
+    path('', include("jadval.urls")),
 
 ]
 if settings.DEBUG:
