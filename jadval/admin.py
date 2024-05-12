@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CategoryModel
+from .models import CategoryModel, PediatryaModel
 
 #admin.site.register(CategoryModel)
 
@@ -7,3 +7,15 @@ from .models import CategoryModel
 @admin.register(CategoryModel)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ['id', 'name']
+
+@admin.register(PediatryaModel)
+class PediartyaAdmin(admin.ModelAdmin):
+    list_display = [ 'faculty',
+                    'id',
+                    'kurs_1',
+                    'kurs_2',
+                    'kurs_3',
+                    'kurs_4',
+                    'kurs_5',
+                    'kurs_6'
+                    ]

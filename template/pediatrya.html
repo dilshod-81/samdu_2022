@@ -1,0 +1,40 @@
+
+<div>
+<p>Salom</p>
+{% for x in pediatrya_fac %}
+<p>1-kurs:{{ x.kurs_1 }} ({{ x.kurs_id_1 }} ) 5-kurs:{{ x.kurs_5 }} ({{ x.kurs_id_5 }} )</p>
+{% endfor %}
+    </div>
+<div>
+<form action="{% url 'summu_dars_jadval' %}" method="POST">
+    {% csrf_token %}
+    <label for="fakul_id" style="color: #3d65fb; text-align: center;" rel="text-align: center;" >Fakultetni tanlang:</label>
+<select  class="form-select" name="fakul_id" aria-label="Default select example" onchange="showGroups(this)" >
+
+    <option value="115">2-son Davolash ishi</option>
+    <option value="116">3-fakultet</option>
+</select>
+<br>
+<label for="name_id" style="color: #3d65fb; text-align: center;"  rel="text-align: center;">Guruhni tanlang:</label>
+<select  class="form-select" name="fakul_id" aria-label="Default select example" onchange="showGroups(this)" >
+    <option selected disabled="disabled">Pidiatriya</option>
+    {% for x in pediatrya_fac %}
+    <option value='{{ x.kurs_id_1 }}'>{{ x.kurs_1 }}</option>
+    {% endfor %}
+    <option value="115">2-son Davolash ishi</option>
+    <option value="116">3-fakultet</option>
+</select>
+    <br>
+    <label for="start_date">Boshlanish sanasi:</label>
+    <input type="date" id="start_date" name="start_date" placeholder="25-05-2024" value="" >
+
+    <label for="end_date">Tugash sanasi:</label>
+    <input type="date" id="end_date"  name="end_date" value="#e66465" min="2023-09-01" max="2025-08-31">
+<!--    <input type="reset" value="Reset">-->
+    <p><button type="submit" class="btn btn-primary">Tasdiqlash</button></p>
+
+</form>
+</div>
+
+
+

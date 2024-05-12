@@ -23,7 +23,8 @@
 
 
 
-<p>*****</p>
+
+<p><a href="davolash_1.html">davolsh</a></p>
 <!--<div class="ant-select w-100 ant-select-single ant-select-show-arrow ant-select-show-search">-->
 <!--  <span class="ant-select-selection-search">-->
 <!--    <select id="firstSelect" onchange="showSecondOptions(this)" aria-label="Default select example">-->
@@ -52,51 +53,60 @@
 <!--</script>-->
 
 
-<!--{% for x in jadval %}-->
-<!--<p>id:{{ x.faculty.id }} - {{ x.group.id }}** {{ x.group.name }}** &#45;&#45;{{ x.semester.code }}&#45;&#45;{{x.lesson_date.formatted_date}}**{{ x.lesson_date.weekday}}</p>-->
-<!--{% endfor %}-->
-<!--<ul>-->
+{% for x in jadval %}
+<p>id:{{ x.faculty.id }} --  {{ x.faculty.name }}  *** id:  {{ x.group.id }} ---  {{ x.group.name }}---code: {{ x.semester.code }}-- {{ x.semester.name }}</p>
+{% endfor %}
+
 <!--        {% for date in unique_date %}-->
 <!--            <li>{{  date.formatted_date }}&#45;&#45; {{  date.weekday }}</li>-->
 <!--        {% endfor %}-->
 <!--    </ul>-->
-<form action="/" method="POST">
-    {% csrf_token %}
-    <label for="fakul_id" style="color: #3d65fb; text-align: center;" rel="text-align: center;">Fakultetni tanlang:</label>
-    <select  class="form-select" name="fakul_id" aria-label="Default select example">
+<!--<form action="/" method="POST">-->
+<!--    {% csrf_token %}-->
+<!--    <label for="fakul_id" style="color: #3d65fb; text-align: center;" rel="text-align: center;">Fakultetni tanlang:</label>-->
+<!--    <select  class="form-select" name="fakul_id" aria-label="Default select example">-->
 
-        <option selected></option>
-        {% for x in fakul_list %}
-        <option value={{ x.id }} style="color: #3d65fb; text-align: center;" rel="text-align: center;">
-            {{ x.name }}
-        </option>
-        {% endfor %}
-        <option value="1">Fakultet 1</option>
-    </select>
+<!--        <option selected></option>-->
+<!--        {% for x in fakul_list %}-->
+<!--        <option value={{ x.id }} style="color: #3d65fb; text-align: center;" rel="text-align: center;">-->
+<!--            {{ x.name }}-->
+<!--        </option>-->
+<!--        {% endfor %}-->
+<!--        <option value="1">Fakultet 1</option>-->
+<!--        <option value="0">Fakultet 0</option>-->
+<!--    </select>-->
 
-    <label for="name_id" style="color: #3d65fb; text-align: center;" rel="text-align: center;">Guruhni tanlang:</label>
-    <select  class="form-select" name="name_id" aria-label="Default select example">
-        <option selected></option>
-        {% for x in group_li %}
-        <option value={{x.id}} style="color: #3d65fb; text-align: center;" rel="text-align: center;">
-            {{ x.name }} ({{ x.educationLang.name }})
-        </option>
-        {% endfor %}
-        <option value="1035">Gruppa 1035</option>
-    </select>
+<!--    <label for="name_id" style="color: #3d65fb; text-align: center;" rel="text-align: center;">Guruhni tanlang:</label>-->
+<!--    <select  class="form-select" name="name_id" aria-label="Default select example">-->
+<!--        <option selected></option>-->
 
-    <label for="semester_code" style="color: #3d65fb; text-align: center;" rel="text-align: center;">Semester tanlang:</label>
-    <select class="form-select" name="semester_code" aria-label="Default select example">
-        <option selected></option>
-        {% for x in semester_list %}
-        <option value={{x.code}} style="color: #3d65fb; text-align: center;" rel="text-align: center;">
-            {{ x.name }}
-        </option>
-        {% endfor %}
-        <option value="20">20</option>
-    </select>
-    <p><button type="submit"  class="btn btn-primary">Tasdiqlash</button></p>
-</form>
+
+<!--            {% for x in group_li %}-->
+
+<!--            <option value={{x.id}} style="color: #3d65fb; text-align: center;" rel="text-align: center;">-->
+<!--                {{ x.name }} ({{ x.educationLang.name }})-->
+<!--            </option>-->
+
+<!--            {% endfor %}-->
+
+
+<!--        <option value="1035">Gruppa 1035</option>-->
+<!--        <option value="0">Gruppa 0</option>-->
+<!--    </select>-->
+
+<!--    <label for="semester_code" style="color: #3d65fb; text-align: center;" rel="text-align: center;">Semester tanlang:</label>-->
+<!--    <select class="form-select" name="semester_code" aria-label="Default select example">-->
+<!--        <option selected></option>-->
+<!--        {% for x in semester_list %}-->
+<!--        <option value={{x.code}} style="color: #3d65fb; text-align: center;" rel="text-align: center;">-->
+<!--            {{ x.name }}-->
+<!--        </option>-->
+<!--        {% endfor %}-->
+<!--        <option value="20">20</option>-->
+<!--        <option value="0">0</option>-->
+<!--    </select>-->
+<!--    <p><button type="submit"  class="btn btn-primary">Tasdiqlash</button></p>-->
+<!--</form>-->
 
 
 

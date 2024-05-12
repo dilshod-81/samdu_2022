@@ -1,0 +1,739 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<script src="/static/js/kurs_groups.js"></script>
+
+    <div class="container main-container">
+        <div id="fb-root">
+        <div class="main-content">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div class="div-article editable-font" id = "div-article" data-font = "18">
+                        <article>
+                            <header class = "article-header">
+                                        <h1 class = "article-title editable-font " data-font = "30">Dars jadvali</h1>
+                            </header>
+                            <div class = "article-text" id = "article-text">
+                            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+                                <html encoding="utf-8">
+                                 <html>
+
+<form action="{% url 'summu_dars_jadval' %}" method="POST">
+    {% csrf_token %}
+    <label for="fakul_id" style="color: #3d65fb; text-align: center;" rel="text-align: center;">Fakultetni tanlang:</label>
+    <select class="form-select" id="fakul_id" name="fakul_id" aria-label="Default select example" onchange="showKurs(this)">
+        <option value="">Fakultetni tanglang ...</option>
+        {% for y in faculties %}
+            <option value="{{ y.id }}">{{ y.name }}({{ y.id }})</option>
+        {% endfor %}
+    </select>
+    <br>
+    <label for="kurs_id" style="color: #3d65fb; text-align: center;" rel="text-align: center;">Kursni tanlang:</label>
+    <select class="form-select" name="kurs_id" id="kurs_id" aria-label="Default select example" onchange="showGroups(this)">
+        <option value="">Kursni tanglang ...</option>
+        <option value="1-kurs">1-kurs</option>
+        <option value="2-kurs">2-kurs</option>
+        <option value="3-kurs">3-kurs</option>
+        <option value="4-kurs">4-kurs</option>
+        <option value="5-kurs">5-kurs</option>
+        <option value="6-kurs">6-kurs</option>
+    </select>
+    <label for="group_select" style="color: #3d65fb; text-align: center;" rel="text-align: center;">Guruhni tanlang:</label>
+    <select class="form-select" name="group_select" id="group_select" aria-label="Default select example">
+        <option selected disabled>Guruhni tanlang ...</option>
+    </select>
+    <br>
+    <label for="start_date">Boshlanish sanasi:</label>
+    <input type="date" id="start_date" name="start_date" value="red" min="2023-09-01" max="2025-08-31">
+
+    <label for="end_date">Tugash sanasi:</label>
+    <input type="date" id="end_date"  name="end_date" value="#e66465" min="2023-09-01" max="2025-08-31">
+
+    <p><button type="submit" class="btn btn-primary">Tasdiqlash</button></p>
+</form>
+
+<script>
+    var kurs_id = {}; // Global o'zgaruvchi
+    function showKurs(select) {
+        var selectedFakul = select.value;
+        var kursSelect = document.getElementById("kurs_id");
+
+        switch(selectedFakul) {
+
+
+            case '226': //+
+                kursSelect.innerHTML =  "<option value='1-kurs'>1-kurs</option>" +
+                                        "<option value='2-kurs'>2-kurs</option>" +
+                                        "<option value='3-kurs'>3-kurs</option>" +
+                                       "<option value='4-kurs'>4-kurs</option>";
+                break;
+            case '6':  // +
+            case '9': //+
+            case '11': //+
+                kursSelect.innerHTML =  "<option value='1-kurs'>1-kurs</option>" +
+                                        "<option value='2-kurs'>2-kurs</option>" +
+                                        "<option value='3-kurs'>3-kurs</option>" +
+                                       "<option value='4-kurs'>4-kurs</option>" +
+                                       "<option value='5-kurs'>5-kurs</option>";
+                break;
+            case '4': // +
+            case '115'://+
+            case '10': // xalqaqo ta'lim
+            case '1'://+
+            case '5'://+
+            case '226':
+            case '7':
+                kursSelect.innerHTML = "<option value='1-kurs'>1-kurs</option>" +
+                                       "<option value='2-kurs'>2-kurs</option>" +
+                                       "<option value='3-kurs'>3-kurs</option>" +
+                                       "<option value='4-kurs'>4-kurs</option>" +
+                                       "<option value='5-kurs'>5-kurs</option>" +
+                                       "<option value='6-kurs'>6-kurs</option>";
+                break;
+            default:
+                kursSelect.innerHTML = "<option selected disabled>Kursni tanglang ...</option>"; // Fakultet tanlanmaganida sukutda bo'lishi
+                break;
+        }
+    }
+    function showGroups(select) {
+    var selectedFakul = document.getElementById("fakul_id").value;
+    var selectedKurs = select.value;
+    var groupSelect = document.getElementById("group_select");
+    groupSelect.innerHTML = ""; // Avvalgi tanlovni o'chirish
+
+        switch(selectedFakul) {
+            case '6':
+                if (selectedKurs === '1-kurs') {
+                    {% for x in groups %}
+                        {% if "st2023" in x.name and "qtst2023" not in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '2-kurs') {
+                    {% for x in groups %}
+                        {% if "st2022" in x.name and "qtst2022" not in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+
+                if (selectedKurs === '3-kurs') {
+                    {% for x in groups %}
+                         {% if "st2021" in x.name and "qtst2021" not in x.name  and "xtst2021" not in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '4-kurs') {
+                    {% for x in groups %}
+                        {% if "st2020" in x.name or "stbds2020" in x.name %}
+                             {% if "qtst2020" not in x.name and "xtst2020" not in x.name %}
+                                groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '5-kurs') {
+                    {% for x in groups %}
+                         {% if "st2019" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                break;
+            case '4':
+                if (selectedKurs === '1-kurs') {
+                    {% for x in groups %}
+                        {% if "pf2023" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '2-kurs') {
+                    {% for x in groups %}
+                         {% if "pf2022" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+
+                if (selectedKurs === '3-kurs') {
+                    {% for x in groups %}
+                         {% if "pf2021" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '4-kurs') {
+                    {% for x in groups %}
+                        {% if "pf2020" in x.name %}
+                                groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '5-kurs') {
+                    {% for x in groups %}
+                        {% if "pf2019-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                 if (selectedKurs === '6-kurs') {
+                    {% for x in groups %}
+                          {% if "pf2018-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                break;
+            case '1':
+                if (selectedKurs === '1-kurs') {
+                    {% for x in groups %}
+                        {% if "1lf2023-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '2-kurs') {
+                    {% for x in groups %}
+                         {% if "1lf2022-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+
+                if (selectedKurs === '3-kurs') {
+                    {% for x in groups %}
+                         {% if "1lf2021-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '4-kurs') {
+                    {% for x in groups %}
+                        {% if "1lf2020-" in x.name %}
+                                groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '5-kurs') {
+                    {% for x in groups %}
+                        {% if "1lf2019-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                 if (selectedKurs === '6-kurs') {
+                    {% for x in groups %}
+                          {% if "1lf2018-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                break;
+            case '115':
+                if (selectedKurs === '1-kurs') {
+                    {% for x in groups %}
+                        {% if "2lf2023-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '2-kurs') {
+                    {% for x in groups %}
+                         {% if "2lf2022-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+
+                if (selectedKurs === '3-kurs') {
+                    {% for x in groups %}
+                         {% if "2lf2021-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '4-kurs') {
+                    {% for x in groups %}
+                        {% if "2lf2020-" in x.name %}
+                                groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '5-kurs') {
+                    {% for x in groups %}
+                        {% if "2lf2019-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                 if (selectedKurs === '6-kurs') {
+                    {% for x in groups %}
+                          {% if "2lf2018-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                break;
+            case '5':
+                if (selectedKurs === '1-kurs') {
+                    {% for x in groups %}
+                        {% if "oxi2023-" in x.name or "xt2023-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '2-kurs') {
+                    {% for x in groups %}
+                         {% if "oxi2022-" in x.name or "xt2022-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+
+                if (selectedKurs === '3-kurs') {
+                    {% for x in groups %}
+                         {% if "oxi2021-" in x.name or "xt2021-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '4-kurs') {
+                    {% for x in groups %}
+                        {% if "pt2020-" in x.name or "xt2020-" in x.name %}
+                                groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '5-kurs') {
+                    {% for x in groups %}
+                        {% if "mp2019-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                 if (selectedKurs === '6-kurs') {
+                    {% for x in groups %}
+                          {% if "mp2018-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                break;
+            case '9':
+                if (selectedKurs === '1-kurs') {
+                    {% for x in groups %}
+                        {% if "pm2023-" in x.name or "mb2023-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '2-kurs') {
+                    {% for x in groups %}
+                         {% if "pm2022-" in x.name or "mb2022-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+
+                if (selectedKurs === '3-kurs') {
+                    {% for x in groups %}
+                         {% if "pm2021-" in x.name or "mb2021-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '4-kurs') {
+                    {% for x in groups %}
+                        {% if "pm2020-" in x.name or "mb2020-" in x.name %}
+                                groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '5-kurs') {
+                    {% for x in groups %}
+                        {% if "pm2019-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                break;
+            case '11':
+                if (selectedKurs === '1-kurs') {
+                    {% for x in groups %}
+                        {% if "ff2023-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '2-kurs') {
+                    {% for x in groups %}
+                         {% if "ff2022-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+
+                if (selectedKurs === '3-kurs') {
+                    {% for x in groups %}
+                         {% if "ff2021-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '4-kurs') {
+                    {% for x in groups %}
+                        {% if "ff2020-" in x.name or "mb2020-" in x.name %}
+                                groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '5-kurs') {
+                    {% for x in groups %}
+                        {% if "ff2019-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                break;
+            case '226':
+                if (selectedKurs === '1-kurs') {
+                    {% for x in groups %}
+                        {% if x.id == 2781 or x.id == 2782 or "qtmj2023-" in x.name  or "qtkp2023-" in x.name or "qtche2023" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '2-kurs') {
+                    {% for x in groups %}
+                         {% if "qtmj2022-" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+
+                if (selectedKurs === '3-kurs') {
+                    {% for x in groups %}
+                         {% if "qtst2021-" in x.name  or "qtpf2021-" in x.name or "qtlf2021-" in x.name or  "qtmj2021-" in x.name or  "qtkp2021-" in x.name or "qtfr2021-" in x.name  %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '4-kurs') {
+                    {% for x in groups %}
+                        {% if "qtst2020-" in x.name  or "qtpf2020-" in x.name or "qtlf2020-" in x.name or  "qtmj2020-" in x.name or  "qtkp2020-" in x.name or "qtfr2020-" in x.name  %}
+                                groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                break;
+            case '10':
+                if (selectedKurs === '1-kurs') {
+                    {% for x in groups %}
+                        {% if x.id != 2591 %}
+                       {% if  "1m" in x.name and "xt1m" not in x.name %}
+
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '2-kurs') {
+                    {% for x in groups %}
+                         {% if "xt2m" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }} ({{ x.id }})", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+
+                if (selectedKurs === '3-kurs') {
+                    {% for x in groups %}
+                         {% if "3m" in x.name and "xt3m" not in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '4-kurs') {
+                    {% for x in groups %}
+                        {% if "4m" in x.name or "xt4t2020-01" in x.name %}
+                                 {% if "xt4m" not in x.name %}
+                                groupSelect.add(new Option("{{ x.name }} ({{ x.id }})", "{{ x.id }}"));
+                        {% endif %}
+                    {% endif %}
+                    {% endfor %}
+                }
+                if (selectedKurs === '5-kurs') {
+                    {% for x in groups %}
+                        {% if "5m" in x.name %}
+                            groupSelect.add(new Option("{{ x.name }} ({{ x.id }})", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                 if (selectedKurs === '6-kurs') {
+                    {% for x in groups %}
+                          {% if "6m" in x.name and "xt6m" not in x.name %}
+                            groupSelect.add(new Option("{{ x.name }}", "{{ x.id }}"));
+                        {% endif %}
+                    {% endfor %}
+                }
+                break;
+
+        }
+    }
+</script>
+
+<!--<a href="{% url 'category' %}"><p><button  class="btn btn-primary">Fakultetlar va guruhlar</button></p></a>-->
+
+<div>
+{% for y in group_li %}
+
+{% for x in jadval %}
+    {% if x.group.id == y.id and x.lesson_date.weekday == 'Dushanba' %}
+        <p style="color: red; text-align: center;">
+            <strong>Guruh: {{ y.name }}  ({{ y.educationLang.name }})</strong>
+        </p>
+        <p style="color: #3d65fb; text-align: center;" rel="text-align: center;"><strong>{{ x.lesson_date.weekday }}</strong> ({{ x.lesson_date.formatted_date }})</p>
+
+        <table>
+
+            <thead>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th>#</th>
+                    <th scope="col">Kirish</th>
+                    <th scope="col">Chiqish</th>
+                    <th scope="col">Fan nomi</th>
+                    <th scope="col">Xona</th>
+                    <th scope="col">Fan turi</th>
+                    <th scope="col">O'qituvchi</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th scope="row"><i class="fa fa-hand-o-right" aria-hidden="true"></i></th>
+                    <td>{{ x.lessonPair.start_time }}</td>
+                    <td>{{ x.lessonPair.end_time }}</td>
+                    <td>{{ x.subject.name }}</td>
+                    <td>{{ x.auditorium.name }} <br> (Bino:{{ x.auditorium.building.name }})</td>
+                    <td>{{ x.trainingType.name }}</td>
+                    <td>{{ x.employee.name }}</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    {% endif %}
+{% endfor %}
+
+{% for x in jadval %}
+    {% if x.group.id == y.id and x.lesson_date.weekday == 'Seshanba' %}
+        <p style="color: red; text-align: center;">
+            <strong>Guruh: {{ y.name }} ({{ y.educationLang.name }})</strong>
+        </p>
+        <p style="color: #3d65fb; text-align: center;" rel="text-align: center;"><strong>{{ x.lesson_date.weekday }}</strong> ({{ x.lesson_date.formatted_date }})</p>
+
+        <table>
+            <thead>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th>#</th>
+                    <th scope="col">Kirish</th>
+                    <th scope="col">Chiqish</th>
+                    <th scope="col">Fan nomi</th>
+                    <th scope="col">Xona</th>
+                    <th scope="col">Fan turi</th>
+                    <th scope="col">O'qituvchi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th scope="row"><i class="fa fa-hand-o-right" aria-hidden="true"></i></th>
+                    <td>{{ x.lessonPair.start_time }}</td>
+                    <td>{{ x.lessonPair.end_time }}</td>
+                    <td>{{ x.subject.name }}</td>
+                     <td>{{ x.auditorium.name }} <br> (Bino:{{ x.auditorium.building.name }})</td>
+                    <td>{{ x.trainingType.name }}</td>
+                    <td>{{ x.employee.name }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% endif %}
+{% endfor %}
+
+{% for x in jadval %}
+    {% if x.group.id == y.id and x.lesson_date.weekday == 'Chorshanba' %}
+        <p style="color: red; text-align: center;">
+            <strong>Guruh: {{ y.name }} ({{ y.educationLang.name }})</strong>
+        </p>
+
+            <p style="color: #3d65fb; text-align: center;" rel="text-align: center;"><strong>{{ x.lesson_date.weekday }}</strong> ({{ x.lesson_date.formatted_date }})</p>
+
+        <table>
+            <thead>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th>#</th>
+                    <th scope="col">Kirish</th>
+                    <th scope="col">Chiqish</th>
+                    <th scope="col">Fan nomi</th>
+                    <th scope="col">Xona</th>
+                    <th scope="col">Fan turi</th>
+                    <th scope="col">O'qituvchi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th scope="row"><i class="fa fa-hand-o-right" aria-hidden="true"></i></th>
+                    <td>{{ x.lessonPair.start_time }}</td>
+                    <td>{{ x.lessonPair.end_time }}</td>
+                    <td>{{ x.subject.name }}</td>
+                     <td>{{ x.auditorium.name }} <br> (Bino:{{ x.auditorium.building.name }})</td>
+                    <td>{{ x.trainingType.name }}</td>
+                    <td>{{ x.employee.name }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% endif %}
+{% endfor %}
+
+
+{% for x in jadval %}
+    {% if x.group.id == y.id and x.lesson_date.weekday == 'Payshanba' %}
+        <p style="color: red; text-align: center;">
+            <strong>Guruh: {{ y.name }} ({{ y.educationLang.name }})</strong>
+        </p>
+
+            <p style="color: #3d65fb; text-align: center;" rel="text-align: center;"><strong>{{ x.lesson_date.weekday }}</strong> ({{ x.lesson_date.formatted_date }})</p>
+
+        <table>
+            <thead>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th>#</th>
+                    <th scope="col">Kirish</th>
+                    <th scope="col">Chiqish</th>
+                    <th scope="col">Fan nomi</th>
+                    <th scope="col">Xona</th>
+                    <th scope="col">Fan turi</th>
+                    <th scope="col">O'qituvchi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th scope="row"><i class="fa fa-hand-o-right" aria-hidden="true"></i></th>
+                    <td>{{ x.lessonPair.start_time }}</td>
+                    <td>{{ x.lessonPair.end_time }}</td>
+                    <td>{{ x.subject.name }}</td>
+                     <td>{{ x.auditorium.name }} <br> (Bino:{{ x.auditorium.building.name }})</td>
+                    <td>{{ x.trainingType.name }}</td>
+                    <td>{{ x.employee.name }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% endif %}
+{% endfor %}
+
+
+{% for x in jadval %}
+    {% if x.group.id == y.id and x.lesson_dateweekday == 'Juma' %}
+        <p style="color: red; text-align: center;">
+            <strong>Guruh: {{ y.name }} ({{ y.educationLang.name }})</strong>
+        </p>
+
+            <p style="color: #3d65fb; text-align: center;" rel="text-align: center;"><strong>{{ x.lesson_date.weekday }}</strong> ({{ x.lesson_date.formatted_date }})</p>
+
+        <table>
+            <thead>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th>#</th>
+                    <th scope="col">Kirish</th>
+                    <th scope="col">Chiqish</th>
+                    <th scope="col">Fan nomi</th>
+                    <th scope="col">Xona</th>
+                    <th scope="col">Fan turi</th>
+                    <th scope="col">O'qituvchi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th scope="row"><i class="fa fa-hand-o-right" aria-hidden="true"></i></th>
+                    <td>{{ x.lessonPair.start_time }}</td>
+                    <td>{{ x.lessonPair.end_time }}</td>
+                    <td>{{ x.subject.name }}</td>
+                     <td>{{ x.auditorium.name }} <br> (Bino:{{ x.auditorium.building.name }})</td>
+                    <td>{{ x.trainingType.name }}</td>
+                    <td>{{ x.employee.name }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% endif %}
+{% endfor %}
+
+
+{% for x in jadval %}
+    {% if x.group.id == y.id and x.lesson_date.weekday == 'Shanba' %}
+        <p style="color: red; text-align: center;">
+            <strong>Guruh: {{ y.name }} ({{ y.educationLang.name }})</strong>
+        </p>
+
+            <p style="color: #3d65fb; text-align: center;" rel="text-align: center;"><strong>{{ x.lesson_date.weekday }}</strong> ({{ x.lesson_date.formatted_date }})</p>
+
+        <table>
+            <thead>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th>#</th>
+                    <th scope="col">Kirish</th>
+                    <th scope="col">Chiqish</th>
+                    <th scope="col">Fan nomi</th>
+                    <th scope="col">Xona</th>
+                    <th scope="col">Fan turi</th>
+                    <th scope="col">O'qituvchi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: #3d65fb; text-align: center;">
+                    <th scope="row"><i class="fa fa-hand-o-right" aria-hidden="true"></i></th>
+                    <td>{{ x.lessonPair.start_time }}</td>
+                    <td>{{ x.lessonPair.end_time }}</td>
+                    <td>{{ x.subject.name }}</td>
+                    <td>{{ x.auditorium.name }} <br> (Bino:{{ x.auditorium.building.name }})</td>
+                    <td>{{ x.trainingType.name }}</td>
+                    <td>{{ x.employee.name }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% endif %}
+{% endfor %}
+{% endfor %}
+
+</div>
+</body>
+</html>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="div-article-sidebar" id = "article-sidebar">
+                    <div class = "inner-sidebar">
+                    <h4 class="article-sidebar-title">Fakultetlar</h4>
+                            {% for y in faculty %}
+                            <a href = "/uz/pages/instruction" class = "article-sidebar-item main-sidebar-item "><i class="fas fa-angle-double-right"></i> {{ y }}</a>
+                            {% endfor %}
+                    </div>
+                    <div class = "inner-sidebar">
+                            <h4 class="article-sidebar-title">Kafedralar</h4>
+                        {% for kafedra in kafedra_list %}
+                            <a class="article-sidebar-news-item " href="/uz/news/2566211"><span class="article-sidebar-news-item-date"><i class="fa fa-university" aria-hidden="true"></i> </span><br>{{ kafedra }}</a>
+                        {% endfor %}
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+
+{% endblock content %}
+

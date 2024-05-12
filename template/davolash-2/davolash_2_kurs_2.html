@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container main-container">
+        <div id="fb-root">
+        <div class="main-content">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div class="div-article editable-font" id = "div-article" data-font = "18">
+
+                        <article>
+                            <header class = "article-header">
+                                        <h1 class = "article-title editable-font " data-font = "30"> Dars jadvali </h1>
+                                        <h3>2-SON DAVOLASH ISHI FAKULTETI 2-KURS</h3>
+                            </header>
+                            <div class = "article-text" id = "article-text">
+                            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+                                <html encoding="utf-8">
+                                 <html>
+
+   </div>
+
+<form action="{% url 'summu_dars_jadval' %}" method="POST">
+    {% csrf_token %}
+    <label for="fakul_id" style="color: #3d65fb; text-align: center;" rel="text-align: center;" >Fakultetni tanlang:</label>
+<select  class="form-select" id="fakul_id" name="fakul_id" aria-label="Default select example" onchange="showGroups(this)" >
+
+    <option value="115">2-son Davolash ishi 2-kurs</option>
+
+</select>
+<br>
+<label for="name_id" style="color: #3d65fb; text-align: center;"  rel="text-align: center;">Guruhni tanlang:</label>
+<select  class="form-select"  name="name_id"  id="name_id" aria-label="Default select example">
+    <option>Guruhni tanlang ... (2-kurs) </option>
+    {% for x, y in kurs_2.items %}
+    <option value='{{ y }}'>{{x }}</option>
+    {% endfor %}
+</select>
+
+    <br>
+    <label for="start_date">Boshlanish sanasi:</label>
+    <input type="date" id="start_date" name="start_date" placeholder="25-05-2024" value="" >
+
+    <label for="end_date">Tugash sanasi:</label>
+    <input type="date" id="end_date"  name="end_date" value="#e66465" min="2023-09-01" max="2025-08-31">
+<!--    <input type="reset" value="Reset">-->
+    <p><button type="submit" class="btn btn-primary">Tasdiqlash</button></p>
+
+</form>
+                        </article>
+                    </div>
+
+                </div>
+                 <div class="col-lg-4 col-12">
+                    <div class="div-article-sidebar" id = "article-sidebar">
+                    <div class = "inner-sidebar">
+                    <h4 class="article-sidebar-title">Bakalavriat</h4>
+
+                            <a href = "/uz/pages/instruction" class = "article-sidebar-item main-sidebar-item "><i class="fas fa-angle-double-right"></i>  Yo'riqnoma</a>
+
+                            <a href = "/uz/pages/schedule_sec_bachelor" class = "article-sidebar-item main-sidebar-item "><i class="fas fa-angle-double-right"></i>  YaDA o'tkazish jadvali</a>
+
+                            <a href = "/uz/pages/class_schedule" class = "article-sidebar-item main-sidebar-item article-sidebar-item-active"><i class="fas fa-angle-double-right"></i>  Dars jadvali</a>
+
+                            <a href = "/uz/pages/learning" class = "article-sidebar-item main-sidebar-item "><i class="fas fa-angle-double-right"></i>  O'zlashtirish</a>
+
+                            <a href = "https://mt.sammu.uz/course/index.php?categoryid=2492" class = "article-sidebar-item main-sidebar-item "><i class="fas fa-angle-double-right"></i>  Davomat</a>
+
+                            <a href = "/uz/pages/catalogue_sciences" class = "article-sidebar-item main-sidebar-item "><i class="fas fa-angle-double-right"></i>  Fanlar katalogi</a>
+
+                            <a href = "/uz/pages/same_scholarships" class = "article-sidebar-item main-sidebar-item "><i class="fas fa-angle-double-right"></i>  Stipendiyalar</a>
+
+                            <a href = "/uz/pages/life_students" class = "article-sidebar-item main-sidebar-item "><i class="fas fa-angle-double-right"></i>  Talabalar turar joyi</a>
+                    </div>
+                    <div class = "inner-sidebar">
+                            <h4 class="article-sidebar-title">So'nggi yangiliklar</h4>
+                                                <a class="article-sidebar-news-item " href="/uz/news/2566211"><span class="article-sidebar-news-item-date"><i class="fa fa-calendar-alt"></i> 27.04.2024</span><br>​Talabalar turar joyida Zakovat o‘yini o‘tkazildi</a>
+                                                <a class="article-sidebar-news-item " href="/uz/news/2566200"><span class="article-sidebar-news-item-date"><i class="fa fa-calendar-alt"></i> 27.04.2024</span><br>​SamDTU Neyroxirurgiya kafedrasi Buyuk Britaniyalik neyroxirurglar bilan hamkorlik qiladi</a>
+                                                <a class="article-sidebar-news-item " href="/uz/news/2566186"><span class="article-sidebar-news-item-date"><i class="fa fa-calendar-alt"></i> 26.04.2024</span><br>​Xitoyning yetakchi kompaniyasi bilan hamkorlik masalalari muhokama qilindi</a>
+                                                <a class="article-sidebar-news-item " href="/uz/news/2566176"><span class="article-sidebar-news-item-date"><i class="fa fa-calendar-alt"></i> 25.04.2024</span><br>​Samarqand davlat tibbiyot universitetida "Peterburg-Samarqand: amaliy jarrohlikdagi zamonaviy yondashuvlar" xalqaro simpoziumi o‘tkazildi</a>
+                                                <a class="article-sidebar-news-item " href="/uz/news/2566162"><span class="article-sidebar-news-item-date"><i class="fa fa-calendar-alt"></i> 25.04.2024</span><br>​Samarqand davlat tibbiyot universiteti qoshida zamonaviy jarrohlik markazi tashkil etildi</a>
+                                                <a class="article-sidebar-news-item " href="/uz/news/2566146"><span class="article-sidebar-news-item-date"><i class="fa fa-calendar-alt"></i> 24.04.2024</span><br>​“Ma’rifat ulashib” loyihasi doirasida taniqli adiblar bilan uchrashuv o‘tkazildi</a>
+                                                <a class="article-sidebar-news-item " href="/uz/news/2566111"><span class="article-sidebar-news-item-date"><i class="fa fa-calendar-alt"></i> 23.04.2024</span><br>​“II Yosh psixiatr va narkologlarning bahorgi Samarqand ilmiy maktabi” nomli xalqaro ilmiy-ta’lim loyihasi ish boshladi</a>
+                                                <a class="article-sidebar-news-item " href="/uz/news/2566094"><span class="article-sidebar-news-item-date"><i class="fa fa-calendar-alt"></i> 23.04.2024</span><br>​SamDTU Fransiyaning Oliy Psixomotorterapiya instituti bilan hamkorlik qiladi</a>
+                                                <a class="article-sidebar-news-item " href="/uz/news/2566027"><span class="article-sidebar-news-item-date"><i class="fa fa-calendar-alt"></i> 21.04.2024</span><br>​SamDTU talabasi tomonidan umumta’lim maktabida salomatlik profilaktik davra suhbati oʻtkazildi</a>
+                                                <a class="article-sidebar-news-item " href="/uz/news/2566010"><span class="article-sidebar-news-item-date"><i class="fa fa-calendar-alt"></i> 20.04.2024</span><br>​“Qon tomir jarrohligining dolzarb muammolari” mavzusidagi xalqaro ilmiy-amaliy anjuman o‘tkazildi</a>
+                                                <a class="article-sidebar-news-item " href="/uz/news/2565983"><span class="article-sidebar-news-item-date"><i class="fa fa-calendar-alt"></i> 19.04.2024</span><br>​SamDTU Neyroxirurglari Turkiyada malaka oshirdilar</a>
+                                                <a class="article-sidebar-news-item " href="/uz/news/2565964"><span class="article-sidebar-news-item-date"><i class="fa fa-calendar-alt"></i> 18.04.2024</span><br>​Arm Wrestling bo‘yicha “Rektor kubogi” musobaqasi o‘tkazildi</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+{% endblock content %}
